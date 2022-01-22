@@ -623,6 +623,7 @@ a {
 
 /* ....................SPEAKER...................... */
 .event-speaker {
+    display: flex;
     padding-top: 66px;
     padding-bottom: 60px;
 }
@@ -632,10 +633,26 @@ a {
 }
 
 .event-speaker-right {
-    background: #FFCF2D;
     border-radius: 4px;
-    background-size: 495px 580px;
-    margin-right: 135px;
+    width: 495px;
+    height: 600px;
+    position: relative;
+    display: flex;
+}
+
+.background {
+    background-color: #FFCF2D;
+    width: 495px;
+    height: 580px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.speaker-img {
+    position: absolute;
+    left: 19px;
+    bottom: 0;
 }
 
 .event-speaker-pre-title {
@@ -709,6 +726,11 @@ a {
     color: var(--color-active);
 }
 
+.event-speaker-left{
+    width: 600px;
+    padding-top: 20px;
+    margin-left: auto;
+}
 /* ...............................specialists............................. */
 .event-specialists {
     padding-top: 120px;
@@ -872,8 +894,11 @@ a {
     margin-bottom: 8px;
 }
 
-.event-request-left {
-    margin-right: 80px;
+.event-request-right {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-btn {
@@ -981,4 +1006,10 @@ a {
     line-height: 150%;
     color: var(--main-text-color);
     margin-right: 40px;
+}
+
+.event-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
