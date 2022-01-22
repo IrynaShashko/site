@@ -204,19 +204,22 @@
                 <div class="event-newsletter-right">
                     <h2 class="event-newsletter-title">Don’t want to miss the best events?
                         Subscribe to our newsletter!</h2>
-                    <div class="event-newsletter-form-item">
-                        <form class="" action="text">
-                            <label for="id">
-                                <input class="event-newsletter-form" type="text" placeholder="Your working email">
-                            </label>
+                        <form class="event-newsletter-form" action="text">
+                            <input class="event-newsletter-input" type="text" placeholder="Your working email">
+                            <button type="submit" class="button">Subscribe</button>
                         </form>
-                        <button type="button" class="button">Subscribe</button>
-                    </div>
                     <form action="checkbox">
-                        <label for="checkbox">
-                            <input class="newsletter-check" type="checkbox">I agree to receive communications from
+                        <div class="checkbox-cont">                        
+                            <input class="newsletter-check visually-hidden" type="checkbox" id="check"> 
+                            <label class="check-label" for="check">
+                                <span class="check-in">
+                                    <svg class="" width="10" height="8">
+                                        <use href="./images/icons.svg#icon-check-in"></use>
+                                    </svg>
+                                </span>I agree to receive communications from
                             Createx Online School
-                        </label>
+                            </label>
+                        </div>
                     </form>
                 </div>
             </div>
