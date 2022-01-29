@@ -229,19 +229,13 @@
                 <div class="event-request-left">
                     <p class="event-request-pre-title">Don’t miss the event</p>
                     <h2 class="event-request-title">Leave a request</h2>
-                    <form class="event-request-form" action="text">
-                        <label class="event-form-list" for="">
-                            <p class="event-form-pre-title">Full Name</p>
-                            <input class="event-form" type="text" placeholder="Your full name">
-                        </label>
-                        <label class="event-form-list" for="">
-                            <p class="event-form-pre-title">Email</p>
-                            <input class="event-form" type="text" placeholder="Your working email">
-                        </label>
-                        <label class="event-form-list" for="">
-                            <p class="event-form-pre-title">Phone</p>
-                            <input class="event-form" type="text" placeholder="Your phone number">
-                        </label>
+                    <form class="event-request-form" action="#">
+                        <label class="event-form-list" for="text">Full Name</label>
+                            <input class="event-form" id="text" type="text" placeholder="Your full name">
+                        <label class="event-form-list" for="email">Email</label>
+                            <input class="event-form" id="email" type="email" placeholder="Your working email">
+                        <label class="event-form-list" for="tel">Phone</label>
+                            <input class="event-form" id="tel" type="tel" placeholder="Your phone number">
                     </form>
                     <button type="button" class="button form-btn">Join the event</button>
                     <p>* You will receive a link to the online lecture in an email after registration.</p>
